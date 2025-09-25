@@ -1,10 +1,6 @@
 # On every push this script is executed
 name: Build and deploy GH Pages
 on: push
-permissions:
-  contents: write   # <-- needed for push
-  pages: write      # if you also use the pages API
-  id-token: write   # optional, for OIDC auth
 
 jobs:
   build:
