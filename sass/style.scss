@@ -1,0 +1,38 @@
+* {
+    font-family: "Helvetica";
+    color: #DDDDDD;
+    text-align: center;
+}
+
+h {
+    font-size: 30pt;
+}
+
+html,body {
+    background-color: #202020;
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+    width: 60%; 
+    margin: 0 auto;
+}
+
+ul.custom-headings {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Style the heading that lives inside each list item */
+ul.custom-headings li h3 {
+    margin: 0;                /* keep the heading tight to the item */
+    font-size: 1.1rem;        /* size you like */
+}
+
+/* Space between heading and its paragraph */
+ul.custom-headings li p {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
