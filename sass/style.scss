@@ -1,38 +1,843 @@
+/* ===== BASE STYLES ===== */
 * {
-    font-family: "Helvetica";
+    font-family: "Helvetica", Arial, sans-serif;
     color: #DDDDDD;
     text-align: center;
 }
 
-h {
-    font-size: 30pt;
-}
-
-html,body {
+html, body {
     background-color: #202020;
     padding: 0px;
     margin: 0px;
 }
 
-body 
-{
+body {
     width: 60%; 
     margin: 0 auto;
+    padding: 20px 0;
+    line-height: 1.6;
 }
 
+/* ===== HEADER & TYPOGRAPHY ===== */
+header h1 {
+    font-size: 30pt;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #AAAAAA;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    margin: 0 0 0.5rem 0;
+}
+
+/* ===== SECTION STYLES ===== */
+section {
+    margin: 2.5rem 0;
+    padding: 0 1rem;
+}
+
+section p {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #EEEEEE;
+}
+
+.intro strong {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.goal p {
+    font-style: italic;
+    color: #CCCCCC;
+    font-size: 1.1rem;
+}
+
+/* ===== LISTS ===== */
+/* Custom headings list (original content) */
 ul.custom-headings {
     list-style: none;
     padding-left: 0;
+    margin: 1.5rem 0;
 }
 
-/* Style the heading that lives inside each list item */
+ul.custom-headings li {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    background-color: #2A2A2A;
+    border-radius: 8px;
+    text-align: left;
+}
+
 ul.custom-headings li h3 {
-    margin: 0;                /* keep the heading tight to the item */
-    font-size: 1.1rem;        /* size you like */
+    margin: 0;
+    font-size: 1.3rem;
 }
 
-/* Space between heading and its paragraph */
 ul.custom-headings li p {
-    margin-top: 0.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    color: #CCCCCC;
+}
+
+/* Regular lists (format & junior researchers) */
+section.format ul,
+section.junior-researchers ul {
+    text-align: left;
+    padding-left: 1.5rem;
+    margin: 1.2rem 0;
+}
+
+section.format li,
+section.junior-researchers li {
+    margin-bottom: 0.8rem;
+    color: #CCCCCC;
+}
+
+/* Organizers list */
+.organizer-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.organizer-list li {
+    padding: 1rem 1.5rem;
+    background-color: #2A2A2A;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    min-width: 180px;
+}
+
+/* ===== SPEAKERS SECTION ===== */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.speaker-card {
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    background-color: #3A3A3A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.9rem;
+    border: 3px solid #444;
+}
+
+.speaker-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.speaker-affiliation {
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    font-style: italic;
+    min-height: 1.2rem;
+}
+
+/* ===== RESPONSIVE DESIGN UPDATES ===== */
+@media (max-width: 768px) {
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0;
+    }
+    
+    .speaker-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .speaker-name {
+        font-size: 1rem;
+    }
+}
+
+/* ===== ORGANIZERS SECTION ===== */
+.organizers-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.organizer-card {
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.organizer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.organizer-card .speaker-image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem;
+    background-color: #3A3A3A;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #555;
+}
+
+.organizer-card .speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.organizer-card .speaker-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.organizer-card .speaker-affiliation {
+    font-size: 0.95rem;
+    color: #AAAAAA;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Special highlight for organizers */
+.organizer-card {
+    border: 2px solid #4A60A5;
+}
+
+.organizer-card:hover {
+    border-color: #5A8AE6;
+}
+
+/* Remove or update the old .organizer-list styles */
+.organizer-list {
+    display: none; /* Hide the old list */
+}
+
+/* Responsive design for organizers */
+@media (max-width: 768px) {
+    .organizers-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .organizer-card {
+        width: 80%;
+        max-width: 280px;
+    }
+    
+    .organizer-card .speaker-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ===== PAPER SUBMISSION SECTION ===== */
+.submission {
+    background-color: #2A2A2A;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    border-left: 5px solid #5A8AE6;
+}
+
+.submission h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.submission-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.submission p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #DDDDDD;
+}
+
+.dates-card {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin: 2rem 0;
+    border: 1px solid #444;
+}
+
+.dates-card h3 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.dates-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.dates-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #444;
+    color: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates-list li:last-child {
+    border-bottom: none;
+}
+
+.dates-list strong {
+    color: #FFFFFF;
+    font-weight: 600;
+    min-width: 180px;
+}
+
+.dates-note {
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    font-style: italic;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.submission-actions {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+}
+
+.submission-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4A6FA5 0%, #5A8AE6 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(90, 138, 230, 0.2);
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.submission-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(90, 138, 230, 0.3);
+    opacity: 0.95;
+}
+
+.submission-button:active {
+    transform: translateY(-1px);
+}
+
+.button-text {
+    margin-right: 0.5rem;
+}
+
+.button-status {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: normal;
+}
+
+.submission-note {
+    font-size: 0.95rem;
+    color: #AAAAAA;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive design for submission section */
+@media (max-width: 768px) {
+    .submission {
+        padding: 1.8rem;
+        margin: 2.5rem 0.5rem;
+    }
+    
+    .dates-card {
+        padding: 1.5rem;
+    }
+    
+    .dates-list li {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .dates-list strong {
+        min-width: auto;
+        margin-bottom: 0.2rem;
+    }
+    
+    .submission-button {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== HEADER & DATE STYLES ===== */
+header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #444;
+}
+
+.event-details {
+    margin-top: 1rem;
+}
+
+.date-location {
+    font-size: 1.1rem;
+    color: #AAAAAA;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.date-icon, .location-icon {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.location-separator {
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.location {
+    color: #BBBBBB;
+    font-style: italic;
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 768px) {
+    .date-location {
+        flex-direction: column;
+        gap: 0.3rem;
+        font-size: 1rem;
+    }
+    
+    .location-separator {
+        display: none;
+    }
+    
+    header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+/* ===== IMPROVED FEATURE LISTS ===== */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding: 1.2rem 1.2rem 1.2rem 3.5rem;
     margin-bottom: 1rem;
+    background-color: #2A2A2A;
+    border-radius: 8px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    text-align: left;
+    color: #DDDDDD;
+    line-height: 1.6;
+}
+
+.feature-list li:hover {
+    transform: translateX(5px);
+    background-color: #333333;
+}
+
+/* Different colors for different sections */
+.format-list li {
+    border-left-color: #5A8AE6;
+}
+
+.spotlight-list li {
+    border-left-color: #E65A5A;
+}
+
+/* Custom bullet icons */
+.feature-list li::before {
+    content: '';
+    position: absolute;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Different icons for format section */
+.format-list li::before {
+    content: '💬';
+    background-color: rgba(90, 138, 230, 0.1);
+}
+
+.format-list li:nth-child(2)::before {
+    content: '👥';
+}
+
+.format-list li:nth-child(3)::before {
+    content: '🎯';
+}
+
+.format-list li:nth-child(4)::before {
+    content: '📡';
+}
+
+/* Different icons for spotlight section */
+.spotlight-list li::before {
+    content: '📐';
+    background-color: rgba(230, 90, 90, 0.1);
+}
+
+.spotlight-list li:nth-child(2)::before {
+    content: '🧠';
+}
+
+.spotlight-list li:nth-child(3)::before {
+    content: '⚡';
+}
+
+/* Hover effects on icons */
+.feature-list li:hover::before {
+    transform: translateY(-50%) scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Numbered list alternative option (uncomment if preferred) */
+/*
+.feature-list {
+    counter-reset: feature-counter;
+}
+
+.feature-list li::before {
+    counter-increment: feature-counter;
+    content: counter(feature-counter);
+    background-color: #5A8AE6;
+    color: white;
+}
+*/
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-list li {
+        padding: 1rem 1rem 1rem 3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-list li::before {
+        left: 0.8rem;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ===== SCHEDULE SECTION ===== */
+.schedule {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #2A2A2A;
+    border-radius: 12px;
+}
+
+.schedule h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: none;
+}
+
+.schedule-note {
+    text-align: center;
+    color: #AAAAAA;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.session-group {
+    margin-bottom: 2.5rem;
+}
+
+.session-group:last-child {
+    margin-bottom: 0;
+}
+
+.session-title {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.session-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.session-title.morning {
+    background-color: rgba(90, 138, 230, 0.2);
+    border-left: 4px solid #5A8AE6;
+}
+
+.session-title.morning::after {
+    background-color: #5A8AE6;
+}
+
+.session-title.afternoon {
+    background-color: rgba(230, 90, 90, 0.2);
+    border-left: 4px solid #E65A5A;
+}
+
+.session-title.afternoon::after {
+    background-color: #E65A5A;
+}
+
+.schedule-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.schedule-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #444;
+    border-radius: 3px;
+}
+
+.schedule-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.schedule-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.schedule-item::before {
+    content: '';
+    position: absolute;
+    left: -2.2rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #5A8AE6;
+    border: 3px solid #202020;
+    z-index: 1;
+}
+
+.schedule-item.debate::before {
+    background-color: #5A8AE6;
+}
+
+.schedule-item.discussion::before {
+    background-color: #E65A5A;
+}
+
+.schedule-item.panel::before {
+    background-color: #5AE6A0;
+}
+
+.schedule-item.break::before {
+    background-color: #AAAAAA;
+}
+
+.schedule-time {
+    min-width: 110px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    padding-top: 0.2rem;
+}
+
+.schedule-content {
+    flex: 1;
+}
+
+.schedule-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+
+.schedule-content p {
+    margin: 0 0 0.8rem 0;
+    color: #CCCCCC;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.schedule-tag {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background-color: #333;
+    color: #AAAAAA;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Color-coded tags */
+.debate .schedule-tag {
+    background-color: rgba(90, 138, 230, 0.2);
+    color: #8BB0FF;
+}
+
+.discussion .schedule-tag {
+    background-color: rgba(230, 90, 90, 0.2);
+    color: #FF8B8B;
+}
+
+.panel .schedule-tag {
+    background-color: rgba(90, 230, 160, 0.2);
+    color: #8BFFC9;
+}
+
+.break .schedule-tag {
+    background-color: rgba(170, 170, 170, 0.2);
+    color: #CCCCCC;
+}
+
+/* Responsive design for schedule */
+@media (max-width: 768px) {
+    .schedule {
+        padding: 1.5rem;
+        margin: 2.5rem 0.5rem;
+    }
+    
+    .schedule-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .schedule-time {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+    
+    .schedule-item::before {
+        left: -1.7rem;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .schedule-timeline::before {
+        left: -0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .session-title {
+        font-size: 1.1rem;
+        padding: 0.6rem 1rem;
+    }
 }
