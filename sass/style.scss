@@ -550,6 +550,13 @@ header {
     font-size: 0.8rem;
 }
 
+ul.custom-headings li .claim {
+    /*content: '💬';*/
+    border-left-color: #E65A5A;
+    /*background-color: rgba(230, 90, 90, 0.1);*/
+    font-style: italic;
+}
+
 /* Different icons for format section */
 .format-list li::before {
     content: '💬';
