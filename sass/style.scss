@@ -809,35 +809,99 @@ ul.custom-headings li .claim {
     color: #CCCCCC;
 }
 
+/* ===== DEBATE CLAIMS ===== */
+.debate .schedule-content > p {
+    background-color: rgba(90, 138, 230, 0.15);
+    border-left: 3px solid #5A8AE6;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0 1rem 0;
+    border-radius: 4px;
+    font-style: italic;
+    color: #EEEEEE;
+    font-size: 1rem;
+}
+
+/* ===== DEBATE PANELISTS ===== */
+.debate-panelists {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0 0.8rem 0;
+    justify-content: flex-start;
+}
+
+.debate-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.side-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #AAAAAA;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.panelist-images {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.panelist-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #444;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.panelist-images img:hover {
+    transform: scale(1.1);
+    border-color: #5A8AE6;
+}
+
 /* Responsive design for schedule */
 @media (max-width: 768px) {
     .schedule {
         padding: 1.5rem;
         margin: 2.5rem 0.5rem;
     }
-    
+
     .schedule-timeline {
         padding-left: 1.5rem;
     }
-    
+
     .schedule-item {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .schedule-time {
         min-width: auto;
         font-size: 0.9rem;
     }
-    
+
     .schedule-item::before {
         left: -1.7rem;
         width: 10px;
         height: 10px;
     }
-    
+
     .schedule-timeline::before {
         left: -0.5rem;
+    }
+
+    .debate-panelists {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .panelist-images img {
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -845,5 +909,10 @@ ul.custom-headings li .claim {
     .session-title {
         font-size: 1.1rem;
         padding: 0.6rem 1rem;
+    }
+
+    .panelist-images img {
+        width: 40px;
+        height: 40px;
     }
 }
