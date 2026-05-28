@@ -306,7 +306,7 @@ section.junior-researchers li {
 
 .submission-content {
     text-align: left;
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -413,11 +413,82 @@ section.junior-researchers li {
     text-align: center;
 }
 
+/* ===== ACCEPTED CONTRIBUTIONS LIST ===== */
+.papers-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.paper-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background-color: #333333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.paper-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.paper-title {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+}
+
+.paper-authors {
+    color: #BBBBBB;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.paper-pdf-link {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #5A8AE6;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.55rem 1.2rem;
+    border-radius: 50px;
+}
+
+.paper-pdf-link:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
+
+.pdf-icon {
+    font-size: 1rem;
+}
+
 /* Responsive design for submission section */
 @media (max-width: 768px) {
     .submission {
         padding: 1.8rem;
         margin: 2.5rem 0.5rem;
+    }
+
+    .paper-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .paper-pdf-link {
+        align-self: flex-start;
     }
     
     .dates-card {
