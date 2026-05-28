@@ -304,6 +304,34 @@ section.junior-researchers li {
     padding-bottom: 0;
 }
 
+.contributions-details > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.contributions-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.contributions-details > summary h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.contributions-details > summary .toggle-icon {
+    color: #5A8AE6;
+    font-size: 1rem;
+    transition: transform .2s ease;
+}
+
+.contributions-details[open] > summary .toggle-icon {
+    transform: rotate(90deg);
+}
+
 .submission-content {
     text-align: left;
     max-width: 80%;
