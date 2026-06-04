@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;geometric-robotics.github.io&#x2F;icra-2026-workshop&#x2F;style.css">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Geometry in the Age of Data‑Driven Robotics | ICRA 2026 Workshop</title>
+    </head>
+    <body>
+        <header>
+            <h1>Geometry in the Age of Data‑Driven Robotics</h1>
+            <div class="event-details">
+                <p class="subtitle">A Full-Day Workshop at ICRA 2026</p>
+                <p class="date-location">
+                    <span class="date-icon">📅</span> Friday, June 5th, 2026 
+                    <span class="location-separator">•</span>
+                    <span class="location-icon">📍</span> Hall C4
+                </p>
+            </div>
+        </header>
+
+        <section class="intro">
+            <p>
+                If you’re attending ICRA 2026, don’t miss this full-day workshop exploring one of the most timely questions in robotics today:
+                <strong>What is the role of geometric methods in an era increasingly dominated by data-driven approaches?</strong>
+            </p>
+            <p>
+                Geometry has long been a cornerstone of robotics, shaping how we model, plan, and control robotic systems. At the same time, learning-based methods are rapidly transforming the field. This workshop brings these perspectives together, sometimes in harmony, sometimes in tension, to critically examine where geometry stands, where it struggles, and how it may evolve.
+            </p>
+        </section>
+
+        <section class="online-attendance">
+            <!-- <h2>Online Attendance</h2> -->
+            <p style="text-align: center">Can't make it to ICRA in person? Join us live on Zoom and take part in the panels, polls, and Q&amp;A from anywhere.</p>
+            <div class="online-attendance-actions">
+                <a href="https://northeastern.zoom.us/meeting/register/GCx21tZATxe_aF9cN0uIIg" class="submission-button" target="_blank" rel="noopener">Register for Online Attendance</a>
+            </div>
+        </section>
+
+        <section class="goal">
+            <h2>Goal of the Workshop</h2>
+            <p>
+                Our goal is to build bridges between model-based, learning-based, and hybrid robotics communities, encouraging thoughtful dialogue rather than one-sided narratives, and to spark collaborations that shape the next generation of robotic systems.
+            </p>
+        </section>
+
+        <section class="original-theme">
+            <h2>Core Workshop Theme</h2>
+            <p>
+                In recent years, data-driven techniques have begun to dominate robotics research across perception,
+                control, and decision-making pipelines. Along the way, many paradigms for guaranteeing safety,
+                interpretability, and provable performance appear to have lost their former prominence, despite
+                once seeming indispensable. Indeed, the toolkit of differential geometry—including Lie groups,
+                topology, screw theory and dual quaternions—lies at the foundation of core robotics problems
+                across kinematics, dynamics, and machine perception, and yet many promising advances seem to
+                have abandoned such mathematical structure in favor of the world of computation and learning.
+                Therefore, in this workshop, we aim to question the evolving role of geometric methods within
+                today’s landscape—across research, education, and scientific communication—via panel debates
+                with domain experts. The goal is to invite controversial discussions to confront the tensions and
+                synergies between classical geometry and modern learning-centric paradigms.
+                The discussions will be framed around three cohesive questions:
+            </p>
+
+            <ul class="custom-headings">
+              <li>
+                <h3>Education</h3>
+                <div class="claim">Claim: The mathematical foundations of geometry are a top priority for robotics education today.</div>
+                <p>What is the right balance in the curricula between geometric rigor and machine learning? Should differential geometry be a priority, even when many students may already be overwhelmed as they grapple with probabilistic and deep-learning concepts?</p>
+              </li>
+
+              <li>
+                <h3>Research</h3>
+                <div class="claim">Claim: The vast majority of interesting research questions on the role of geometry in robotics have already been answered.</div>
+                <p>What role can geometry play within the current research landscape, and what is the most effective means of developing representations: through learning or mathematical structure? Is the success of data-driven approaches due to methodological superiority or merely a temporary convenience due to data abundance in certain domains?</p>
+              </li>
+
+              <li>
+                <h3>Communication</h3>
+                <div class="claim">Claim: Writing papers and giving talks using formal mathematical jargon only serves to increase the field’s barrier to entry.</div>
+                <p>What narrative frameworks best convey the relevance and impact of geometry? How should authors balance the expressivity of abstract mathematical terminology with the associated high barrier to entry? Conversely, what is lost by writing in language that is suitable for a broader audience? In an era where “AI” dominates headlines, we will discuss how to articulate the complementary role of geometry to stakeholders ranging from funding agencies to industry partners and the public.</p>
+              </li>
+            </ul>
+        </section>
+
+        <section class="format">
+            <h2>Workshop Format (Designed for Interaction)</h2>
+            <p>
+                Instead of a schedule dominated by invited talks, this workshop emphasizes discussion, debate, and community engagement:
+            </p>
+            <ul class="feature-list format-list">
+                <li>Three rounds of structured pro/contra panel debates with leading experts</li>
+                <li>Active audience participation, including live Q&A and interactive polling</li>
+                <li>Final open panel discussion to synthesize insights from the day</li>
+                <li>Live streaming via Zoom, with shared interaction tools (e.g., Slido, PollEverywhere) so remote participants can actively engage</li>
+            </ul>
+        </section>
+
+        <section class="speakers">
+            <h2>Confirmed Panelists</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="images/noemie_jaquier.jpeg" class="speaker-image">
+                    <div class="speaker-name">Noémie Jaquier</div>
+                    <div class="speaker-affiliation">KTH Royal Institute of Technology</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/frank_park.jpg" class="speaker-image">
+                    <div class="speaker-name">Frank Park</div>
+                    <div class="speaker-affiliation">Seoul National University</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/andreas_mueller.jpg" class="speaker-image">
+                    <div class="speaker-name">Andreas Müller</div>
+                    <div class="speaker-affiliation">Johannes Kepler University</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/stefano_stramigioli.jpg" class="speaker-image">
+                    <div class="speaker-name">Stefano Stramigioli</div>
+                    <div class="speaker-affiliation">University of Twente</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/patrick_wensing.jpg" class="speaker-image">
+                    <div class="speaker-name">Patrick Wensing</div>
+                    <div class="speaker-affiliation">University of Notre Dame</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/ross_hatton.jpg" class="speaker-image">
+                    <div class="speaker-name">Ross Hatton</div>
+                    <div class="speaker-affiliation">Oregon State University</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/antonio_franchi.jpg" class="speaker-image">
+                    <div class="speaker-name">Antonio Franchi</div>
+                    <div class="speaker-affiliation">Sapienza University of Rome and University of Twente</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/georgia_chalvatzaky.jpg" class="speaker-image">
+                    <div class="speaker-name">Georgia Chalvatzaki</div>
+                    <div class="speaker-affiliation">Technical University of Darmstadt</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/david_rosen.jpg" class="speaker-image">
+                    <div class="speaker-name">David Rosen</div>
+                    <div class="speaker-affiliation">Northeastern University</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/bruno_adorno.jpg" class="speaker-image">
+                    <div class="speaker-name">Bruno Vilhena Adorno</div>
+                    <div class="speaker-affiliation">University of Manchester</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/seth_hutchinson.jpg" class="speaker-image">
+                    <div class="speaker-name">Seth Hutchinson</div>
+                    <div class="speaker-affiliation">Northeastern University</div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/nadja_figueroa.jpg" class="speaker-image">
+                    <div class="speaker-name">Nadia Figueroa</div>
+                    <div class="speaker-affiliation">University of Pennsylvania</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="submission">
+            <details class="contributions-details">
+                <summary><h2>Accepted Contributions</h2><span class="toggle-icon" aria-hidden="true">▶</span></summary>
+            <div class="submission-content">
+
+                <ul class="papers-list">
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Internalizing Geometric Stability for Learning Quadrupedal Recovery on Irregular Terrains</div>
+                        <div class="paper-authors">Boyuan Deng, Xu Yang, Yilin Mo, and Nikolaos Tsagarakis</div>
+                    </div>
+                    <a href="papers/deng-internalizing-geometric-stability-for-learning.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Efficient Collision-Avoidance for Multi-Robot System with Superquadric Models and Sum-of-Squares Approximation</div>
+                        <div class="paper-authors">Siyi Lu, Sipu Ruan</div>
+                    </div>
+                    <a href="papers/lu-efficient-collision-avoidance-for-multi.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">HumanoidPF: Collision-Free Humanoid Traversal via Geometric Guidance</div>
+                        <div class="paper-authors">Han Xue, Sikai Liang, Zhikai Zhang, Zicheng Zeng, Yun Liu, Yunrui Lian, Jilong Wang, Qingtao Liu, Xuesong Shi, Li Yi</div>
+                    </div>
+                    <a href="papers/xue-humanoidpf-collision-free-humanoid-traversal.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">The Port-Hamiltonian Structure of Vehicle-Manipulator Systems</div>
+                        <div class="paper-authors">Ramy Rashad</div>
+                    </div>
+                    <a href="papers/rashad-the-port-hamiltonian-structure-of.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Ergodic Imitation for Adaptive Exploration around Demonstrations</div>
+                        <div class="paper-authors">Ziyi Xu, Cem Bilaloglu, Yiming Li, and Sylvain Calinon</div>
+                    </div>
+                    <a href="papers/xu-ergodic-imitation-for-adaptive-exploration.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Lagrangian Neural Fields for Infinite-Dimensional Dynamics Modeling</div>
+                        <div class="paper-authors">Riccardo Morandi and Noémie Jaquier</div>
+                    </div>
+                    <a href="papers/morandi-lagrangian-neural-fields-for-infinite.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">SQ-CBF: Signed Distance Functions for Numerically Stable Superquadric-Based Safety Filtering</div>
+                        <div class="paper-authors">Haocheng Zhao, Lukas Brunke, Oliver Lagerquist, Siqi Zhou, Angela Schoellig</div>
+                    </div>
+                    <a href="papers/zhao-sq-cbf-signed-distance-functions.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Introducing Sylvester Forms to Robotics: Efficient Closed-Form Pose Estimation</div>
+                        <div class="paper-authors">Jana Vráblíková, Ezio Malis, Laurent Busé</div>
+                    </div>
+                    <a href="papers/vrablikova-introducing-sylvester-forms-to-robotics.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Lie groups</div>
+                        <div class="paper-authors">Luis Marques, Maani Ghaffari, and Dmitry Berenson</div>
+                    </div>
+                    <a href="papers/marques-quantifying-action-uncertainty-with-inaccurate.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Digging into Learned Camera Self-Calibration: What Matters in Challenging Motion Sequences</div>
+                        <div class="paper-authors">Takayuki Kanai, Igor Vasiljevic, Vitor Guizilini, Kota Shinjo, and Yuto Mori</div>
+                    </div>
+                    <a href="papers/kanai-digging-into-learned-camera-self.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Geometry-Aware Probabilistic Shared Autonomy with Riemannian Motion Policies</div>
+                        <div class="paper-authors">Kay Pompetzki, Cristiana de Farias, Joao Carvalho, Georgia Chalvatzaki, Jan Peters</div>
+                    </div>
+                    <a href="papers/pompetzki-geometry-aware-probabilistic-shared-autonomy.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">GAP: Geometric Anchor Pre-training for Data-Efficient Visuomotor Learning of Manipulation Tasks</div>
+                        <div class="paper-authors">Davide Buoso, Andrea Protopapa, Stefano Di Carlo, Francesca Pistilli, Giuseppe Averta</div>
+                    </div>
+                    <a href="papers/buoso-gap-geometric-anchor-pre-training.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation</div>
+                        <div class="paper-authors">Max Siebenborn, Daniel Ordonez Apraez, Sophie Lueth, Giulio Turrisi, Massimiliano Pontil, Claudio Semini, Georgia Chalvatzaki</div>
+                    </div>
+                    <a href="papers/siebenborn-morphologically-equivariant-flow-matching-for.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Learning to Cover: Imitation Learning from a Geometric Expert for MANET Deployment</div>
+                        <div class="paper-authors">Edwin Meriaux, Shuo Wen, Antonio Loría, Gregory Dudek</div>
+                    </div>
+                    <a href="papers/meriaux-learning-to-cover-imitation-learning.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Explicit Geometry for CPU-Efficient Mapping: Bridging Discrete Grids and Continuous Fields</div>
+                        <div class="paper-authors">José E. Maese</div>
+                    </div>
+                    <a href="papers/maese-explicit-geometry-for-cpu-efficient.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Geometric and Model Priors in Motion Primitives</div>
+                        <div class="paper-authors">Maximilian Mühlbauer, Arne Sachtler, Alin Albu-Schäffer, João Silvério</div>
+                    </div>
+                    <a href="papers/muhlbauer-geometric-and-model-priors-in.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">From Cylinders to Complex Shapes: Nematic Multi-Stable Shape-Morphing Cylindrical Actuators</div>
+                        <div class="paper-authors">Yaron Veksler, Sagi Senderovich, Jacob N. Miske, Jeffery I. Lipton, Amir D. Gat</div>
+                    </div>
+                    <a href="papers/veksler-from-cylinders-to-complex-shapes.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Lie Group Error Coordinates for Symmetry-Aware Reinforcement Learning applied to Quadrotor Low-Level Control</div>
+                        <div class="paper-authors">Andrea Pagnini, Ezio Malis</div>
+                    </div>
+                    <a href="papers/pagnini-lie-group-error-coordinates-for.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Kinematics-Informed Data-Enabled Predictive Control for Mobile Robots</div>
+                        <div class="paper-authors">Binlin Zhang, Erkan Kayacan</div>
+                    </div>
+                    <a href="papers/zhang-kinematics-informed-data-enabled-predictive.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Graph-Based Reward Learning and Automatic Subtask Discovery for Long-Horizon Manipulation</div>
+                        <div class="paper-authors">Andrea Protopapa, Davide Buoso, Francesca Pistilli and Giuseppe Averta</div>
+                    </div>
+                    <a href="papers/protopapa-graph-based-reward-learning-and.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Cross-space Symmetry Composition in Robotics</div>
+                        <div class="paper-authors">Loizos Hadjiloizou, Rodrigo Pérez-Dattari, Noémie Jaquier</div>
+                    </div>
+                    <a href="papers/hadjiloizou-cross-space-symmetry-composition-in.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Planning along Differentiable Charts of Constraint Manifolds with the Inverse Function Theorem</div>
+                        <div class="paper-authors">Thomas Cohn, Seiji Shaw, Nicholas Roy, Russ Tedrake</div>
+                    </div>
+                    <a href="papers/cohn-planning-along-differentiable-charts-of.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Geometry as Inductive Bias in Data-Driven Robotics: Case Studies from the RobotGenSkill Project</div>
+                        <div class="paper-authors">Arno Verduyn, Ali Mousavi Mohammadi, Riccardo Burlizzi, Wilm Decré,  Erwin Aertbeliën, Maxim Vochten, and Joris De Schutter</div>
+                    </div>
+                    <a href="papers/verduyn-extended-abstract.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Object Pose and Shape Estimation for Grasping: Does it Work?</div>
+                        <div class="paper-authors">Pavan Karke, Kushal Shah, Gaurav Singh, Md Faizal Karim, K Madhava Krishna, Rajat Talak</div>
+                    </div>
+                    <a href="papers/karke-object-pose-and-shape-estimation.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Towards Modularity in Floating-Base Deep Lagrangian Networks</div>
+                        <div class="paper-authors">Lucas Schulze, Juliano Decico Negri, Victor Barasuol, Vivian Suzano Medeiros, Marcelo Becker, Jan Peters, Oleg Arenz</div>
+                    </div>
+                    <a href="papers/schulze-towards-modularity-in-floating-base.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Equivariant In-Context Learning for Grasp Adaptation</div>
+                        <div class="paper-authors">Rosa Wolf, Roman Freiberg, Loris Schneider, Rania Rayyes, Gerhard Neumann</div>
+                    </div>
+                    <a href="papers/wolf-equivariant-in-context-learning-for.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Reactive Motion Generation via Phase-varying Neural Potential Functions</div>
+                        <div class="paper-authors">Ahmet Tekden, Dimitrios Kanoulas, Aude Billard, Yasemin Bekiroglu</div>
+                    </div>
+                    <a href="papers/tekden-reactive-motion-generation-via-phase.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Reusable Skill Injection: Geometric Motion Plans with Human Motor Expertise</div>
+                        <div class="paper-authors">Miroslav David, Karla Stepanova, Robert Babuska</div>
+                    </div>
+                    <a href="papers/david-learning-transferable-motor-skills-for.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Integrating Topological Object Recognition into Semantic SLAM for Unseen Cluttered Environments</div>
+                        <div class="paper-authors">Avania Bhattacharya, Ekta U. Samani,  and Ashis G. Banerjee</div>
+                    </div>
+                    <a href="papers/bhattacharya-integrating-topological-object-recognition-into.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">Topological Priors for Learning Stable Dynamical Systems from Demonstrations</div>
+                        <div class="paper-authors">Lucas Schwarz and Florian Röhrbein</div>
+                    </div>
+                    <a href="papers/schwarz-topological-priors.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                <li class="paper-item">
+                    <div class="paper-info">
+                        <div class="paper-title">The Topological Cage: A Search-Less Geometric Handshake for Medial Axis Injection</div>
+                        <div class="paper-authors">Shubham Puri Goswami and Ravi Prakash</div>
+                    </div>
+                    <a href="papers/goswami-topological-cage-navigation.pdf" class="paper-pdf-link" target="_blank" rel="noopener">
+                        <span class="pdf-icon">📄</span> PDF
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </details>
+        </section>
+
+        <section class="schedule">
+            <h2>Tentative Schedule</h2>
+            <p class="schedule-note">All times are in Central European Time (CET). Schedule is subject to change.</p>
+
+            <p class="schedule-note">🚨 Please note that each debate participant has been assigned to argue 
+                for or against the claim under consideration, in the spirit of an academic debate. 
+                This position may or may not reflect their true personal viewpoint, 
+                which they will share after the formal debate! 🚨</p>
+
+            <div class="schedule-container">
+                <div class="session-group">
+                    <h3 class="session-title morning">Morning Session</h3>
+                    <div class="schedule-timeline">
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 - 09:10</div>
+                            <div class="schedule-content">
+                                <h4>Opening Remarks</h4>
+                                <p>Welcome and workshop introduction by organizers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item debate">
+                            <div class="schedule-time">09:10 - 10:00</div>
+                            <div class="schedule-content">
+                                <h4>Debate: Question 1 - Education</h4>
+                                <p>Claim: The mathematical foundations of geometry are a top priority for robotics education today.</p>
+                                <div class="debate-panelists">
+                                    <div class="debate-side pro">
+                                        <div class="side-label">Pro</div>
+                                        <div class="panelist-images">
+                                            <img src="images/seth_hutchinson.jpg" alt="Seth Hutchinson" title="Seth Hutchinson">
+                                            <img src="images/stefano_stramigioli.jpg" alt="Stefano Stramigioli" title="Stefano Stramigioli">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side contra">
+                                        <div class="side-label">Contra</div>
+                                        <div class="panelist-images">
+                                            <img src="images/frank_park.jpg" alt="Frank Park" title="Frank Park">
+                                            <img src="images/noemie_jaquier.jpeg" alt="Noémie Jaquier" title="Noémie Jaquier">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side mod">
+                                        <div class="side-label">Moderator</div>
+                                        <div class="panelist-images">
+                                            <img src="images/riddhiman_laha.jpg" alt="Riddhiman Laha" title="Riddhiman Laha">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-tag">Debate</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item discussion">
+                            <div class="schedule-time">10:00 - 10:20</div>
+                            <div class="schedule-content">
+                                <h4>Discussion: Question 1 - Education</h4>
+                                <p>Interactive session on educational challenges and opportunities</p>
+                                <div class="schedule-tag">Audience Participation</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item break">
+                            <div class="schedule-time">10:20 - 10:30</div>
+                            <div class="schedule-content">
+                                <h4>Spotlight Talks</h4>
+                                    <li class="small-paper-item">
+                                        <div class="small-paper-info">
+                                            <div class="small-paper-title">Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Lie groups</div>
+                                            <div class="small-paper-authors">Luis Marques, Maani Ghaffari, and Dmitry Berenson</div>
+                                        </div>
+                                        <a href="papers/marques-quantifying-action-uncertainty-with-inaccurate.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                            <span class="pdf-icon">📄</span> PDF
+                                        </a>
+                                    </li>
+                                    <li class="small-paper-item">
+                                        <div class="small-paper-info">
+                                            <div class="small-paper-title">Graph-Based Reward Learning and Automatic Subtask Discovery for Long-Horizon Manipulation</div>
+                                            <div class="small-paper-authors">Andrea Protopapa, Davide Buoso, Francesca Pistilli and Giuseppe Averta</div>
+                                        </div>
+                                        <a href="papers/protopapa-graph-based-reward-learning-and.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                            <span class="pdf-icon">📄</span> PDF
+                                        </a>
+                                    </li>
+                                    <li class="small-paper-item">
+                                        <div class="small-paper-info">
+                                            <div class="small-paper-title">Cross-space Symmetry Composition in Robotics</div>
+                                            <div class="small-paper-authors">Loizos Hadjiloizou, Rodrigo Pérez-Dattari, Noémie Jaquier</div>
+                                        </div>
+                                        <a href="papers/hadjiloizou-cross-space-symmetry-composition-in.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                            <span class="pdf-icon">📄</span> PDF
+                                        </a>
+                                    </li>
+                                <div class="schedule-tag">Spotlight Talks</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item break">
+                            <div class="schedule-time">10:30 - 11:00</div>
+                            <div class="schedule-content">
+                                <h4>Coffee Break & Poster Session I</h4>
+                                <p>Networking and viewing of contributed posters from junior researchers</p>
+                                <div class="schedule-tag">Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item debate">
+                            <div class="schedule-time">11:00 - 11:50</div>
+                            <div class="schedule-content">
+                                <h4>Debate: Question 2 - Research</h4>
+                                <p>Claim: The vast majority of interesting research questions on the role of geometry in robotics have already been answered.</p>
+                                <div class="debate-panelists">
+                                    <div class="debate-side pro">
+                                        <div class="side-label">Pro</div>
+                                        <div class="panelist-images">
+                                            <img src="images/patrick_wensing.jpg" alt="Patrick Wensing" title="Patrick Wensing">
+                                            <img src="images/antonio_franchi.jpg" alt="Antonio Franchi" title="Antonio Franchi">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side contra">
+                                        <div class="side-label">Contra</div>
+                                        <div class="panelist-images">
+                                            <img src="images/andreas_mueller.jpg" alt="Andreas Müller" title="Andreas Müller">
+                                            <img src="images/georgia_chalvatzaky.jpg" alt="Georgia Chalvatzaki" title="Georgia Chalvatzaki">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side mod">
+                                        <div class="side-label">Moderator</div>
+                                        <div class="panelist-images">
+                                            <img src="images/tobias_loew.jpg" alt="Tobias Löw" title="Tobias Löw">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-tag">Debate</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item discussion">
+                            <div class="schedule-time">11:50 - 12:10</div>
+                            <div class="schedule-content">
+                                <h4>Discussion: Question 2 - Research</h4>
+                                <p>Audience Q&A and interactive polling on research themes</p>
+                                <div class="schedule-tag">Audience Participation</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item break">
+                            <div class="schedule-time">12:10 - 14:10</div>
+                            <div class="schedule-content">
+                                <h4>Lunch Break</h4>
+                                <p>Networking and informal discussions</p>
+                                <div class="schedule-tag">Break</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="session-group">
+                    <h3 class="session-title afternoon">Afternoon Session</h3>
+                    <div class="schedule-timeline">
+                        <div class="schedule-item debate">
+                            <div class="schedule-time">14:10 - 14:50</div>
+                            <div class="schedule-content">
+                                <h4>Debate: Question 3 - Communication</h4>
+                                <p>Claim: Writing papers and giving talks using formal mathematical jargon only serves to increase the field's barrier to entry.</p>
+                                <div class="debate-panelists">
+                                    <div class="debate-side pro">
+                                        <div class="side-label">Pro</div>
+                                        <div class="panelist-images">
+                                            <img src="images/ross_hatton.jpg" alt="Ross Hatton" title="Ross Hatton">
+                                            <img src="images/david_rosen.jpg" alt="David Rosen" title="David Rosen">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side contra">
+                                        <div class="side-label">Contra</div>
+                                        <div class="panelist-images">
+                                            <img src="images/nadja_figueroa.jpg" alt="Nadia Figueroa" title="Nadia Figueroa">
+                                            <img src="images/bruno_adorno.jpg" alt="Bruno Vilhena Adorno" title="Bruno Vilhena Adorno">
+                                        </div>
+                                    </div>
+                                    <div class="debate-side mod">
+                                        <div class="side-label">Moderator</div>
+                                        <div class="panelist-images">
+                                            <img src="images/jake_welde.png" alt="Jake Welde" title="Jake Welde">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-tag">Debate</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item discussion">
+                            <div class="schedule-time">14:50 - 15:20</div>
+                            <div class="schedule-content">
+                                <h4>Discussion: Question 3 - Communication</h4>
+                                <p>Sharing strategies for effective scientific communication</p>
+                                <div class="schedule-tag">Audience Participation</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item break">
+                            <div class="schedule-time">15:20 - 15:30</div>
+                            <div class="schedule-content">
+                                <h4>Spotlight Talks</h4>
+                                <li class="small-paper-item">
+                                    <div class="small-paper-info">
+                                        <div class="small-paper-title">Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation</div>
+                                        <div class="small-paper-authors">Max Siebenborn, Daniel Ordonez Apraez, Sophie Lueth, Giulio Turrisi, Massimiliano Pontil, Claudio Semini, Georgia Chalvatzaki</div>
+                                    </div>
+                                    <a href="papers/siebenborn-morphologically-equivariant-flow-matching-for.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                        <span class="pdf-icon">📄</span> PDF
+                                    </a>
+                                </li>
+                                <li class="small-paper-item">
+                                    <div class="small-paper-info">
+                                        <div class="small-paper-title">Lie Group Error Coordinates for Symmetry-Aware Reinforcement Learning applied to Quadrotor Low-Level Control</div>
+                                        <div class="small-paper-authors">Andrea Pagnini, Ezio Malis</div>
+                                    </div>
+                                    <a href="papers/pagnini-lie-group-error-coordinates-for.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                        <span class="pdf-icon">📄</span> PDF
+                                    </a>
+                                </li>
+                                <li class="small-paper-item">
+                                    <div class="small-paper-info">
+                                        <div class="small-paper-title">Lagrangian Neural Fields for Infinite-Dimensional Dynamics Modeling</div>
+                                        <div class="small-paper-authors">Riccardo Morandi and Noémie Jaquier</div>
+                                    </div>
+                                    <a href="papers/morandi-lagrangian-neural-fields-for-infinite.pdf" class="small-paper-pdf-link" target="_blank" rel="noopener">
+                                        <span class="pdf-icon">📄</span> PDF
+                                    </a>
+                                </li>
+                                <div class="schedule-tag">Spotlight Talks</div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item break">
+                            <div class="schedule-time">15:30 - 16:00</div>
+                            <div class="schedule-content">
+                                <h4>Coffee Break & Poster Session II</h4>
+                                <p>Continued poster viewing and networking</p>
+                                <div class="schedule-tag">Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item panel">
+                            <div class="schedule-time">16:00 - 17:00</div>
+                            <div class="schedule-content">
+                                <h4>Full Panel Discussion</h4>
+                                <p>Synthesizing insights from all three debates. Open discussion with all panelists and audience.</p>
+                                <div class="schedule-tag">Panel Discussion</div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <div class="schedule-time">17:00 - 17:15</div>
+                            <div class="schedule-content">
+                                <h4>Closing Remarks</h4>
+                                <p>Workshop summary, key takeaways, and future directions</p>
+                                <div class="schedule-tag">Closing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="organizers">
+            <h2>Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <div class="speaker-image">
+                        <img src="images/riddhiman_laha.jpg" alt="Riddhiman Laha">
+                    </div>
+                    <div class="speaker-name">Riddhiman Laha</div>
+                    <div class="speaker-affiliation">Northeastern University</div>
+                </div>
+                <div class="organizer-card">
+                    <div class="speaker-image">
+                        <img src="images/tobias_loew.jpg" alt="Tobias Löw">
+                    </div>
+                    <div class="speaker-name">Tobias Löw</div>
+                    <div class="speaker-affiliation">University of Washington</div>
+                </div>
+                <div class="organizer-card">
+                    <div class="speaker-image">
+                        <img src="images/jake_welde.png" alt="Jake Welde">
+                    </div>
+                    <div class="speaker-name">Jake Welde</div>
+                    <div class="speaker-affiliation">Cornell University</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLACEHOLDER SECTIONS FOR FUTURE CONTENT -->
+        <!--
+        <section class="important-dates">
+            <h2>Important Dates</h2>
+            <p>To be announced.</p>
+        </section>
+
+        -->
+    </body>
+</html>
